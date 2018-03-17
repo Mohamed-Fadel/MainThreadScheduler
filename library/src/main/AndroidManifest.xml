@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mohamedfadel91.mainthreadschedulerlib">
+
+    <application>
+        <provider
+            android:name=".DummyContentProvider"
+            android:authorities="DummyContentProvider"
+            android:enabled="true"
+            android:exported="false"></provider>
+    </application>
+
+</manifest>
