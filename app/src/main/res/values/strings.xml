@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MainThreadScheduler</string>
+    <string name="email_hint">Email Address</string>
 </resources>
