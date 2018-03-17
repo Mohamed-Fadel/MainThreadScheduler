@@ -3,6 +3,7 @@
     package="com.mohamedfadel91.mainthreadschedulerlib">
 
     <application>
+
         <provider
             android:name=".DummyContentProvider"
             android:authorities="${applicationId}.mainthreadschedulerlib.DummyContentProvider"
