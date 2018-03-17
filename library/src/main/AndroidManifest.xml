@@ -5,9 +5,9 @@
     <application>
         <provider
             android:name=".DummyContentProvider"
-            android:authorities="DummyContentProvider"
+            android:authorities="${applicationId}.mainthreadschedulerlib.DummyContentProvider"
             android:enabled="true"
-            android:exported="false"></provider>
+            android:exported="false"/>
     </application>
 
 </manifest>
