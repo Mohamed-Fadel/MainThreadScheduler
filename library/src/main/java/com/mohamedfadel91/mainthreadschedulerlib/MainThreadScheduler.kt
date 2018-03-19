@@ -6,13 +6,18 @@ import android.support.test.espresso.Espresso
 
 /**
  * Created by fadel on 17/03/18.
+ * This Class responsible for schedule functions or runnable
+ * objects to run as soon as MainThread become idle..
  */
 object MainThreadScheduler {
     internal var mainThreadHandler: Handler? = null
 
+    /**
+     * it post [unit] to run as soon as MainThread become Idle..
+     */
     fun scheduleWhenIdle(unit: () -> Unit) {
         val block: () -> Unit = {
-            Thread(Runnable {
+            Thread({
                 Espresso.onIdle()
                 mainThreadHandler?.post(unit)
             }).start()
@@ -29,9 +34,12 @@ object MainThreadScheduler {
         }
     }
 
+    /**
+     * it post [runnable] to run as soon as MainThread become Idle..
+     */
     fun scheduleWhenIdle(runnable: Runnable) {
         val block: () -> Unit = {
-            Thread(Runnable {
+            Thread({
                 Espresso.onIdle()
                 mainThreadHandler?.post(runnable)
             }).start()

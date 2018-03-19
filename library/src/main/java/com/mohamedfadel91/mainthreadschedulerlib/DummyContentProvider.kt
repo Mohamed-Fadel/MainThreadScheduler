@@ -23,6 +23,7 @@ class DummyContentProvider : ContentProvider() {
     }
 
     override fun onCreate(): Boolean {
+        // to post message to the mainThread...
         MainThreadScheduler.mainThreadHandler = Handler()
         return false
     }
