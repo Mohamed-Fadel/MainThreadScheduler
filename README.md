@@ -1,5 +1,7 @@
 # MainThreadScheduler
 
+[![](https://jitpack.io/v/Mohamed-Fadel/MainThreadScheduler.svg)](https://jitpack.io/#Mohamed-Fadel/MainThreadScheduler)
+
 Android Library to `schedule` tasks to run as soon as `MainThread` become `Idle` written in Kotlin & java
 
 # Use Example
