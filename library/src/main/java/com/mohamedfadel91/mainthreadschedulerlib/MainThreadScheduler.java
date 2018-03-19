@@ -8,11 +8,17 @@ import android.support.test.espresso.Espresso;
 
 /**
  * Created by fadel on 17/03/18.
+ * This Class responsible for schedule runnable
+ * objects to run as soon as MainThread become idle..
  */
 public class MainThreadScheduler {
     @Nullable
     static Handler mainThreadHandler;
 
+    /**
+     * it post runnable to run as soon as MainThread become Idle..
+     * @param runnable
+     */
     public static void scheduleWhenIdle(@NonNull final Runnable runnable){
         Runnable _runnable = new Runnable() {
             @Override

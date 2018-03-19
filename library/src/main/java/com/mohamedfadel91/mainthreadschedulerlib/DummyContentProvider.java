@@ -29,6 +29,7 @@ public class DummyContentProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
+        // to post message to the mainThread...
         MainThreadScheduler.mainThreadHandler = new Handler();
         return false;
     }
